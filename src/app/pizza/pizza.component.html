@@ -1,0 +1,88 @@
+<h1>Order Entry Screen</h1>
+<div class="">
+  <div class="">
+    <table datatable  class="row-border hover" id="testAssetsGrid" cellspacing="0" width="100%">
+      <thead>
+      <tr>
+        <th>Topping</th>
+        <th>Small($5)</th>
+        <th>Medium($7)</th>
+        <th>Large($8)</th>
+        <th>Extra Large($9)</th>
+      </tr>
+      </thead>
+      <tbody >
+      <tr>
+        <th>Veg toppings</th>
+      </tr>
+      <tr>
+        <th scope="row">Tomatoes($1.00)</th>
+        <td (change)='onSmallTomatoSelect($event)'><input type="checkbox"></td>
+        <td (change)='onMediumTomatoSelect($event)'><input type="checkbox"></td>
+        <td (change)='onLargeTomotoSelect($event)'><input type="checkbox"></td>
+        <td (change)='onELargeTomotaSelect($event)'><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <th scope="row">Onions($0.50)</th>
+        <td (change)='onSmallOnionSelect($event)'><input type="checkbox"></td>
+        <td (change)='onMediumOnionSelect($event)'><input type="checkbox"></td>
+        <td (change)='onLargeOnionSelect($event)'><input type="checkbox"></td>
+        <td (change)='onELargeSelect($event)'><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <th scope="row">Bell Peppers($1.00)</th>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <th scope="row">Mushrooms($1.20)</th>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <th scope="row">Pineapple($0.75)</th>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <th>Non veg toppings</th>
+      </tr>
+      <tr>
+        <th scope="row">Suasage($1.00)</th>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <th scope="row">Pepperoni($2.00)</th>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <th scope="row">Barbeque Chicken($3.00)</th>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <th scope="row">Total</th>
+        <td>{{ SmallTotal }}</td>
+        <td>{{ MediumTotal }}</td>
+        <td>{{ LargeTotal }}</td>
+        <td>{{ ExtraTotal }}</td>
+      </tr>
+      <tr>
+      </tbody>
+    </table>
+  </div>
+</div>
